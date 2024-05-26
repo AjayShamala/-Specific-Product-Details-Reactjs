@@ -50,8 +50,8 @@ class ProductItemDetails extends Component {
     if (response.ok) {
       const fetchedData = await response.json()
       const updatedData = this.getFormattedData(fetchedData)
-      const updatedSimilarData = fetchedData.similar_products(each =>
-        this.getFormattedData(each),
+      const updatedSimilarData = fetchedData.similar_products.map(each =>
+        this.getFormattedData(each)
       )
       this.setState({
         productsList: updatedData,
@@ -72,7 +72,7 @@ class ProductItemDetails extends Component {
     <div>
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-error-view-img.png"
-        alt="error view"
+        alt="failure view"
         className="image-4"
       />
       <h1 className="headers">Product Not Found </h1>
@@ -109,34 +109,39 @@ class ProductItemDetails extends Component {
           <div>
             <h1 className="main-heads">{title}</h1>
             <p className="parass">RS {price}/-</p>
-            <p className="pars">{rating}</p>
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/star-img.png"
-              alt="stars"
-              className="image-1"
-            />
-            <p className="parssss">{totalReviews} Reviews </p>
+            <div className="rowaaa">
+              <div className="rowssss">
+                <p className="pars">{rating}</p>
+                <img
+                  src="https://assets.ccbp.in/frontend/react-js/star-img.png"
+                  alt="stars"
+                  className="image-1"
+                />
+              </div>
+              <p className="parssss">{totalReviews} Reviews </p>
+            </div>
             <p className="params">{description}</p>
             <p className="stock-container">
-              Availiable:<span className="span-container">{availability}</span>
+              Availiable :{' '}
+              <span className="span-container">{availability}</span>
             </p>
             <p className="stock-container">
-              Brand:<span className="span-container">{brand}</span>
+              Brand : <span className="span-container">{brand}</span>
             </p>
             <hr className="horizontal-container" />
             <div className="rows">
               <button
-                data-testid="minus"
                 onClick={this.onDecrementQuantity}
                 className="buttons"
+                data-testid="minus"
               >
                 <BsDashSquare className="dash-container" />
               </button>
               <p className="parses">{quantity}</p>
               <button
-                data-testid="plus"
                 onClick={this.onIncrementQuantity}
                 className="buttons"
+                data-testid="plus"
               >
                 <BsPlusSquare className="dash-container" />
               </button>
