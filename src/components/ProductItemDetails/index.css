@@ -1,1 +1,110 @@
 /* Write your CSS here */
+.image-6 {
+  width: 28%;
+  border-radius: 20px;
+  padding-right: 20px;
+}
+.contains {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 50px;
+  margin: 10px;
+}
+.main-heads {
+  color: #616e7c;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+.parass {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+}
+.rowaaa {
+  display: flex;
+}
+.rowssss {
+  background-color: #3b82f6;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 8vh;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.pars {
+  color: #ffffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main-heaing {
+  margin-left: 80px;
+  padding-top: 50px;
+  font-size: 24px;
+  color: #171f46;
+}
+.image-1 {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.parssss {
+  color: #171f46;
+  font-family: 'Roboto';
+  margin-left: 18px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.params {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #1e293b;
+}
+.stock-container {
+  color: #171f46;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.span-container {
+  color: #616e7c;
+  font-weight: normal;
+}
+.rows {
+  display: flex;
+}
+.buttons {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #616e7c;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+.parses {
+  color: #616e7c;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.buttons-contain {
+  background-color: #3b82f6;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0px;
+  color: #ffffffff;
+  font-family: 'Roboto';
+  font-weight: bold;
+  border-radius: 5px;
+}
+.unorder-list {
+  display: flex;
+  list-style-type: none;
+}
